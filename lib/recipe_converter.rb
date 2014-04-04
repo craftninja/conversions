@@ -8,4 +8,10 @@ class RecipeConverter
       @ingredients[ingredient] = amount/15
     end
   end
+
+  def to_cups
+    @ingredients.each do |ingredient, amount|
+      @ingredients[ingredient] = amount/15/16
+    end
+  end
 end
